@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+    background-color: bisque;
+}
+
+.btn-content{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    height: 12rem;
+    width: 12rem;
+    border-radius: 20%;
+    border: 0.5rem solid black;
+    margin: 1rem;
+
+}
+
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.aqua{
+    background-color: aqua;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: green;
+}
+
+@media (max-width: 465px) {
+    .btn{
+        width:8rem;
+        height: 8rem;
+        overflow: hidden
+    }
+    
+};
+
