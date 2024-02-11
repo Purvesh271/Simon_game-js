@@ -38,11 +38,19 @@ body{
     background-color: green;
 }
 
+.srt{
+    height: 2rem;
+    width: 4rem;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
 @media (max-width: 465px) {
     .btn{
-        width:8rem;
-        height: 8rem;
-        overflow: hidden
+        width:7rem;
+        height: 7rem;
+        overflow: hidden;
+        margin: 0.75rem;
     }
     
 };
