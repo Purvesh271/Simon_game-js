@@ -6,13 +6,15 @@ let btns=["red","yellow","aqua","lightgreen"];
 let started = false;
 let level = 0;
 
-let h2 = document.querySelector("h2");
+let srt = document.querySelector(".srt");
+let h2 = document.querySelector("h2")
 
 
-document.addEventListener("keypress", function(){
+srt.addEventListener("click", function(){
     if (started == false){
         console.log("game is started");
         started = true;
+        srt.innerText = "Start";
         
         lvlup();
     }
@@ -53,8 +55,9 @@ function check(idx){
         }
     }
     else {
-        h2.innerHTML = `Game Over! Score =  <b>${level}</b> <br> Click to start.`;
-        
+        h2.innerHTML = `Game Over! Score =  <b>${level}</b> <br> Click to restart.`;
+        srt.innerText = "Restart";
+
         let bg = document.querySelector("body");
         bg.style.backgroundColor = "red";
        
@@ -87,5 +90,6 @@ function reset(){
     gameseq = [];
     userseq = [];
     level = 0;
+    
 }
 
